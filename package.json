@@ -1,0 +1,23 @@
+{
+  "name": "03-bases-node",
+  "version": "1.0.0",
+  "description": "nabo goma",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "colors": "^1.4.0",
+    "mailgun-js": "^0.22.0",
+    "moment": "^2.29.1",
+    "nodemailer": "^6.4.17",
+    "sendmail": "^1.6.1",
+    "typescript": "^3.9.3",
+    "yargs": "^15.1.0"
+  },
+  "devDependencies": {}
+}
