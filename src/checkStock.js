@@ -23,19 +23,19 @@ const getScript = (url) => {
 };
 
 const search_text = "notify-me";
-const dateFormat = "MMMM Do YYYY,  HH:mm:ss";
+const dateFormat = "Do,  HH:mm:ss";
 
 export async function checkStock(item, print = false) {
     const ret = await getScript(item.url)
     if (ret.indexOf(search_text) == -1) {
         if (print) {
-            console.log(item.description + " - EN STOCK!! - " + moment().format(dateFormat));
+            console.log("** + EN STOCK!! - " + item.description + moment().format(dateFormat));
         }
         item.changed = !item.onStock || item.fistCheck;
         item.onStock = true;
     } else {
         if (print) {
-            console.log(item.description + " - Out of stock :( - " + moment().format(dateFormat));
+            console.log("** - Out of stock :( - " + item.description  + moment().format(dateFormat));
         }
         item.changed = item.onStock || item.fistCheck;
         item.onStock = false;
