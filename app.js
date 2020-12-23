@@ -2,8 +2,8 @@ import { Item } from './models/item.js'
 import { checkStock } from './src/checkStock.js';
 import { sendMail } from './src/sendMail.js';
 
-const asus3080      = new Item("RTX 3080 ROG Strix", "https://www.pccomponentes.com/asus-rog-strix-geforce-rtx-3080-10g-gaming-oc-10gb-gddr6x")
-const asusRX6900XT  = new Item("RTX 3080 Radeon RX6900XT", "https://www.pccomponentes.com/asus-radeon-rx-6900-xt-16gb-gddr6")
+const asus3080      = new Item("nVidia RTX 3080 ROG Strix", "https://www.pccomponentes.com/asus-rog-strix-geforce-rtx-3080-10g-gaming-oc-10gb-gddr6x")
+const asusRX6900XT  = new Item("Radeon RX 6900XT ROG Strix", "https://www.pccomponentes.com/asus-radeon-rx-6900-xt-16gb-gddr6")
 const gSkill        = new Item("G.Skill Trident DDR4 3600", "https://www.pccomponentes.com/gskill-trident-z-neo-ddr4-3600-pc4-28800-64gb-4x16gb-cl16")
 const logiHOTAS     = new Item("Logitech X56 Hotas", "https://www.pccomponentes.com/logitech-x56-hotas-joystick-acelerador");
 const amdRyzen      = new Item("AMD Ryzen 9 5950X 3.4 GHz", "https://www.pccomponentes.com/amd-ryzen-9-5950x-34-ghz");
