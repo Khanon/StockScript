@@ -3,7 +3,7 @@ export class Item {
     url = "";
     onStock = false;
     changed = false;
-    fistCheck = true;
+    firstCheck = true;
 
     constructor(description, url) {
         this.description = description;
