@@ -10,6 +10,6 @@ export class Item {
         this.url = url;
         this.onStock = false;
         this.changed = false;
-        this.fistCheck = true;
+        this.firstCheck = true;
     }
 }

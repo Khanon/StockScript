@@ -23,22 +23,22 @@ const getScript = (url) => {
 };
 
 const search_text = "notify-me";
-const dateFormat = "Do,  HH:mm:ss";
+const dateFormat = "DD, HH:mm:ss";
 
 export async function checkStock(item, print = false) {
     const ret = await getScript(item.url)
     if (ret.indexOf(search_text) == -1) {
         if (print) {
-            console.log("** + EN STOCK!! - " + item.description + moment().format(dateFormat));
+            console.log("** + STOCK: " + item.description + " " + moment().format(dateFormat));
         }
-        item.changed = !item.onStock || item.fistCheck;
+        item.changed = !item.onStock || item.firstCheck;
         item.onStock = true;
     } else {
         if (print) {
-            console.log("** - Out of stock :( - " + item.description  + moment().format(dateFormat));
+            console.log("** -   Out: " + item.description + " " + moment().format(dateFormat));
         }
-        item.changed = item.onStock || item.fistCheck;
+        item.changed = item.onStock || item.firstCheck;
         item.onStock = false;
     }
-    item.fistCheck = false;
+    item.firstCheck = false;
 }

@@ -27,13 +27,14 @@ const checkList = [
 ]
 
 async function check() {
+    console.log("");
     for await (const item of checkList) {
         await checkStock(item, true);
         if (item.changed) {
             if (item.onStock) {
-                sendMail("+ ¡¡¡ ON STOCK !!!! ********", item.description);
+                sendMail("+ ON STOCK !!! - " + item.description, item.description);
             } else {
-                sendMail("- Out of stock", item.description);
+                sendMail("- Out of stock - " + item.description, item.description);
             }
         }
     }
