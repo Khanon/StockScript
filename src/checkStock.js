@@ -37,13 +37,13 @@ export async function checkStock(item, print = false) {
         if (print) {
             console.log("** + STOCK: " + item.description + " " + moment().format(dateFormat));
         }
-        item.changed = !item.onStock || item.firstCheck;
+        item.changed = !item.onStock && !item.firstCheck;
         item.onStock = true;
     } else {
         if (print) {
             console.log("** -   Out: " + item.description + " " + moment().format(dateFormat));
         }
-        item.changed = item.onStock || item.firstCheck;
+        item.changed = item.onStock && !item.firstCheck;
         item.onStock = false;
     }
     item.firstCheck = false;
