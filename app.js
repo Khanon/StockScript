@@ -10,18 +10,24 @@ const amdRyzen      = new Item("AMD Ryzen 9 5950X 3.4 GHz", "https://www.pccompo
 const seasonic      = new Item("Seasonic SSR-750TR Snow Silent", "https://www.pccomponentes.com/seasonic-ssr-750tr-snow-silent-750w-80-plus-titanium-modular");
 const lianli        = new Item("Lian-Li PC-O11D Dynamic XL", "https://www.pccomponentes.com/lian-li-pc-o11d-dynamic-xl-rog-edition-torre-atx-negra");
 const noctua        = new Item("Noctua NH-D15 chromax.black", "https://www.pccomponentes.com/noctua-nh-d15-chromaxblack");
+const ssd500        = new Item("SSD nvme Corsair MP600 500GB", "https://www.pccomponentes.com/corsair-force-series-gen4-mp600-nvme-m2-500gb-ssd");
+const ssd1000       = new Item("SSD nvme Corsair MP600 1TB", "https://www.pccomponentes.com/corsair-mp600-force-series-1tb-ssd-m2-pcie-gen-40-x4");
+const x570E         = new Item("Asus ROG Strix X570-E Gaming", "https://www.pccomponentes.com/asus-rog-strix-x570-e-gaming");
 const ps5           = new Item("Sony PlayStation 5", "https://www.pccomponentes.com/sony-playstation-5");
 const ps5Digital    = new Item("Sony PlayStation 5 Digital", "https://www.pccomponentes.com/sony-playstation-5-edicion-digital");
 
 const checkList = [
     asus3080,
     asusRX6900XT,
-    // gSkill,
     logiHOTAS,
+    x570E,
     amdRyzen,
+    noctua,
+    gSkill,
+    ssd500,
+    ssd1000,
     seasonic,
     lianli,
-    noctua,
     ps5,
     ps5Digital
 ]
