@@ -1,6 +1,6 @@
 import { get } from 'https';
 import moment from 'moment';
-// import fs from 'fs';
+import fs from 'fs';
 
 const getScript = (url) => {
     return new Promise((resolve, reject) => {
@@ -28,10 +28,10 @@ const dateFormat = "DD, HH:mm:ss";
 
 export async function checkStock(item, print = false) {
     const ret = await getScript(item.url)
-    /*fs.writeFile("index" + item.description + ".html", ret, function (err) {
+    fs.writeFile("index" + item.description + ".html", ret, function (err) {
         if (err) return console.log(err);
-        console.log('Hello World > helloworld.txt');
-      });*/
+      });
+    console.log("aki DISPONIBILIDAD = ", ret.indexOf(search_text));
 
     if (ret.indexOf(search_text) == -1) {
         if (print) {

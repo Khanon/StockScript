@@ -19,13 +19,7 @@ const ps5Digital    = new Item("Sony PlayStation 5 Digital", "https://www.pccomp
 const checkList = [
     asus3080,
     asusRX6900XT,
-    logiHOTAS,
-    x570E,
-    amdRyzen,
-    noctua,
     gSkill,
-    ssd500,
-    ssd1000,
     seasonic,
     lianli,
     ps5,
@@ -48,6 +42,6 @@ async function check() {
 
 setInterval(() => {
     check();
-}, 30000);
+}, 1000);
 
 
