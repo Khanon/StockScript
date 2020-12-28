@@ -28,10 +28,10 @@ const dateFormat = "DD, HH:mm:ss";
 
 export async function checkStock(item, print = false) {
     const ret = await getScript(item.url)
-    fs.writeFile("index" + item.description + ".html", ret, function (err) {
+    /*fs.writeFile("index" + item.description + ".html", ret, function (err) {
         if (err) return console.log(err);
       });
-    console.log("aki DISPONIBILIDAD = ", ret.indexOf(search_text));
+    console.log("aki DISPONIBILIDAD = ", ret.indexOf(search_text));*/
 
     if (ret.indexOf(search_text) == -1) {
         if (print) {
