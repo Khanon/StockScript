@@ -8,6 +8,7 @@ const gSkill        = new Item("G.Skill Trident DDR4 3600", "https://www.pccompo
 const logiHOTAS     = new Item("Logitech X56 Hotas", "https://www.pccomponentes.com/logitech-x56-hotas-joystick-acelerador");
 const amdRyzen      = new Item("AMD Ryzen 9 5950X 3.4 GHz", "https://www.pccomponentes.com/amd-ryzen-9-5950x-34-ghz");
 const seasonic      = new Item("Seasonic SSR-750TR Snow Silent", "https://www.pccomponentes.com/seasonic-ssr-750tr-snow-silent-750w-80-plus-titanium-modular");
+const seasonicPrime = new Item("Seasonic Prime TX-750", "https://www.pccomponentes.com/seasonic-prime-tx-750-750w-80-plus-titanium-modular");
 const lianli        = new Item("Lian-Li PC-O11D Dynamic XL", "https://www.pccomponentes.com/lian-li-pc-o11d-dynamic-xl-rog-edition-torre-atx-negra");
 const noctua        = new Item("Noctua NH-D15 chromax.black", "https://www.pccomponentes.com/noctua-nh-d15-chromaxblack");
 const ssd500        = new Item("SSD nvme Corsair MP600 500GB", "https://www.pccomponentes.com/corsair-force-series-gen4-mp600-nvme-m2-500gb-ssd");
@@ -21,6 +22,7 @@ const checkList = [
     asusRX6900XT,
     gSkill,
     seasonic,
+    seasonicPrime,
     lianli,
     ps5,
     ps5Digital
