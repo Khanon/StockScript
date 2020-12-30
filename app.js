@@ -20,9 +20,6 @@ const ps5Digital    = new Item("Sony PlayStation 5 Digital", "https://www.pccomp
 const checkList = [
     asus3080,
     asusRX6900XT,
-    gSkill,
-    seasonic,
-    seasonicPrime,
     lianli,
     ps5,
     ps5Digital
