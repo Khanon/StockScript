@@ -3,6 +3,7 @@ import { checkStock } from './src/checkStock.js';
 import { sendMail } from './src/sendMail.js';
 
 const asus3080      = new Item("nVidia RTX 3080 ROG Strix", "https://www.pccomponentes.com/asus-rog-strix-geforce-rtx-3080-10g-gaming-oc-10gb-gddr6x")
+const asus3080tuf   = new Item("nVidia RTX 3080 ROG TUF", "https://www.pccomponentes.com/asus-tuf-geforce-rtx-3080-oc-10gb-gddr6x")
 const asusRX6900XT  = new Item("Radeon RX 6900XT ROG Strix", "https://www.pccomponentes.com/asus-radeon-rx-6900-xt-16gb-gddr6")
 const gSkill        = new Item("G.Skill Trident DDR4 3600", "https://www.pccomponentes.com/gskill-trident-z-neo-ddr4-3600-pc4-28800-64gb-4x16gb-cl16")
 const logiHOTAS     = new Item("Logitech X56 Hotas", "https://www.pccomponentes.com/logitech-x56-hotas-joystick-acelerador");
@@ -19,6 +20,7 @@ const ps5Digital    = new Item("Sony PlayStation 5 Digital", "https://www.pccomp
 
 const checkList = [
     asus3080,
+    asus3080tuf,
     asusRX6900XT,
     lianli,
     ps5,
