@@ -11,6 +11,7 @@ const amdRyzen      = new Item("AMD Ryzen 9 5950X 3.4 GHz", "https://www.pccompo
 const seasonic      = new Item("Seasonic SSR-750TR Snow Silent", "https://www.pccomponentes.com/seasonic-ssr-750tr-snow-silent-750w-80-plus-titanium-modular");
 const seasonicPrime = new Item("Seasonic Prime TX-750", "https://www.pccomponentes.com/seasonic-prime-tx-750-750w-80-plus-titanium-modular");
 const lianli        = new Item("Lian-Li PC-O11D Dynamic XL", "https://www.pccomponentes.com/lian-li-pc-o11d-dynamic-xl-rog-edition-torre-atx-negra");
+const thermal       = new Item("Thermaltake View 51", "https://www.pccomponentes.com/thermaltake-view-51-argb-edition-cristal-templado-usb-30");
 const noctua        = new Item("Noctua NH-D15 chromax.black", "https://www.pccomponentes.com/noctua-nh-d15-chromaxblack");
 const ssd500        = new Item("SSD nvme Corsair MP600 500GB", "https://www.pccomponentes.com/corsair-force-series-gen4-mp600-nvme-m2-500gb-ssd");
 const ssd1000       = new Item("SSD nvme Corsair MP600 1TB", "https://www.pccomponentes.com/corsair-mp600-force-series-1tb-ssd-m2-pcie-gen-40-x4");
@@ -21,8 +22,8 @@ const ps5Digital    = new Item("Sony PlayStation 5 Digital", "https://www.pccomp
 const checkList = [
     asus3080,
     asus3080tuf,
-    asusRX6900XT,
     lianli,
+    thermal,
     ps5,
     ps5Digital
 ]
